@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function doA(i){
+            // alert(i);
+            // setTimeout(function(){ alert("실행" +i );  }, 1000);
+            // setTimeout(()=>{ alert("실행" +i );  }, 1000);
+        // }
+        // setTimeout( () => { }, 1000 );
+        // (function(i){ alert(i)})(0);
+        // for( var i = 0; i<3 ; i++){
+            // 1초 뒤에 실행 i 라는거 출력 예약
+            // doA(i);
+
+            // (function(){})();
+            // ((i)=>{
+            //     setTimeout((i) => {
+            //         alert(i);
+            //     }, 1000);
+            // })(i);
+
+            // setTimeout(function(){ alert("실행" +i );  }, 1000);
+
+            // 1초 뒤에 실행 i 라는거 출력 예약
+            // setTimeout(function(){ alert("실행" +i );  }, 1000);
+
+            // 1초 뒤에 실행 i 라는거 출력 예약
+            // setTimeout(function(){ alert("실행" +i );  }, 1000);
+        // }
+
+
+        for(var i = 0; i<3; i++){
+            (function(a){   
+                // alert("자기자신 익명함수 호출"+a);   
+                setTimeout((a) => {
+                    alert(a);
+                }, 1000);
+            })( i );
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
