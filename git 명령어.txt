@@ -1,0 +1,7 @@
+git config --global user.name 이름 설정
+git config --global user.email 이메일 설정
+GIT INIT 깃 폴더 설정
+Git clone 서버에서 파일 내려받기
+GIT add . 모든 파일 commit할 계획
+GIT commit -m "첫번째 commit"
+GIT push 서버에 올림
